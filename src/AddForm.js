@@ -22,7 +22,7 @@ class AddForm extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="todo">Add Todos </label>
                     <input id="todo" onChange={this.handleChange} type="text" value={this.state.content} />
-                    <button className="btn waves-effect waves-light" type="submit">Submit</button>
+                    <button className="btn waves-effect waves-light" type="submit">Submit Todos</button>
                 </form>
             </div>
         );

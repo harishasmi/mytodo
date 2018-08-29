@@ -3,17 +3,16 @@ Just a Todo App which was blatantly ripped off from net-ninja youtube channel.
 
 The site is currently deployed to https://harishasmi.github.io/mytodo/ if you want to have a look at it.
 
-Some help regarding hosting.
-npm install --save gh-pages
+Some help regarding hosting. First install the package npm install --save gh-pages
+
+Then in the package.json file add a new item called "homepage":"https://harishasmi.github.io/mytodo"
+
+Inside Scripts Tag add the below items
 
 
-package.json
-  ...
-  "homepage":"https://harishasmi.github.io/mytodo",
-  ...
-  Inside Scripts Tag
   "predeploy":"npm run build",
   "deploy":"gh-pages -d build",
-  ...
 
-npm run deploy
+
+
+Then finally add "npm run deploy"
